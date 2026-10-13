@@ -1,0 +1,19 @@
+You're an attacker trying to break into a company. Would you rather:
+
+Spend days exploiting vulnerabilities and trying to bypass firewall defenses?
+Or just send a phishing email to the IT administrator - and get the access you need?
+A computer network is like a fortress with towering stone walls and heavily armored gates. One way to conquer it is to breach through the gates, but another, a much 
+simpler way - just ask the gatekeeper to open the door for you. In the cyber world, humans are often these naive "gatekeepers" - the weakest link in cyber security 
+and those who help threat actors the most.
+
+A key is passed from one person to another, indicating how the "gatekeepers" share the access with threat actors.
+
+Why Humans Are Targeted
+Humans are targeted because of the access they can provide - to websites, mailboxes, or databases. Some threat actors hunt for a specific access, while others are not 
+so selective and just breach as many accounts as they can and decide how to use them later. Here are just a few examples of what threat actors hope for when trying to breach humans:
+
+Attack Example	Next Step of Attackers
+Breach Google account of the HR manager	Steal and sell the entire employee database
+Trick a wealthy person into running malware	Hijack a web banking session from their PC
+Breach the IT administrator's VPN account	Access the heart of a big corporate network
+Trick a government worker into sharing secrets	Use the information to simplify the next attacks
