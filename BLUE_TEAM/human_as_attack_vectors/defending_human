@@ -1,0 +1,17 @@
+Defending against threats involves two key tasks: Mitigation and Detection. Mitigation aims to prevent or reduce the chance and impact of attacks, for example by training 
+  employees or deploying a good anti-phishing solution. However, no matter how good mitigation measures are, one day they are bypassed. That's where your SOC skills are vital
+    to detect and investigate advanced attacks that slip through:
+
+Three threats aim to breach the company: the first is mitigated by an anti-phishing solution, the second by a security awareness training, and the remaining one is detected 
+  and stopped by the SOC analysts.
+
+Defending Humans
+As a SOC analyst, your task is to detect and investigate attacks, and you'll have the whole SOC Level 1 path to learn it. However, you'll soon be tired of analyzing all the 
+  never-ending attacks and might think about how to automatically prevent common threats. This is why knowing key mitigation measures is essential. If your mitigation ideas
+  are approved by IT and top management, you'll ease the SOC routine and make your company more secure! Here are a few examples of how to protect employees:
+
+Mitigation	Description
+Anti-phishing solution	SOC routine becomes easier with a tool that blocks phishing emails before the users even notice
+Antivirus / EDR solution	A reliable antivirus on all corporate hosts is a great measure to prevent humans from running malware
+"Trust but verify" principle	Instruct your employees how to detect deepfakes and verify suspicious requests from "CEO" or "IT"
+Security awareness training	Teach your employees how to detect phishing and reinforce training through phishing simulations
