@@ -1,0 +1,25 @@
+In most serious attacks, the first goal is to gain access to the target system. What happens next depends on the attacker's motivation: stealing data, 
+deploying ransomware, or even destroying information without a way to recover. However, nearly all attacks begin the same way. Let's look at three examples
+of how systems are attacked.
+
+Human-Led Attacks
+It's no surprise that system users are often those who start the attack: By inserting a malicious USB found on a street, downloading malware from pirated 
+resources, or simply reusing a weak password everywhere. 81% of breaches involve stolen or breached passwords - check out your passwords too!
+
+Two examples of how human-led attacks start: by using a weak "tryhackme" password seen in data breaches, and inserting a RubberDucky - a USB that runs malware commands.
+
+Vulnerabilities
+Every piece of software can have security flaws. In 2024, over 40,000 software vulnerabilities were published and more than 300 were actively exploited in major 
+attacks. Moreover, IT administrators often increase the risks by setting weak passwords and allowing unrestricted access to their systems.
+
+A screenshot from Shodan showing 100,000 Internet-exposed Windows XP / 2008 machines in 2025, and a chart showing 325 new critical vulnerabilities since 2024.
+
+Supply Chain
+Your PC is home to hundreds of apps, including web browsers, messengers, development, and entertainment software. Every app depends on thousands of libraries. 
+If threat actors manage to breach one of the apps or libraries and push an update to all its users, all of them will be compromised. This technique is called a 
+supply chain attack. The most famous examples are the SolarWinds and 3CX breaches which affected thousands of companies.
+
+Emerging Threat of Supply Chain
+
+It is hard to protect from supply chain attacks since you can't always control all the software present on your laptops, servers, and web apps. Even TryHackMe 
+once fell victim to a supply chain in Lottie Player, a library used for room animations. As a SOC analyst, you must be ready for such scenarios and know how to respond!
