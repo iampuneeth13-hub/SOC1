@@ -1,0 +1,16 @@
+Misconfigurations
+On the other hand, a misconfiguration isn't a bug in the software but a mistake in how the system was set up, often by the IT team. These errors happen frequently, usually to make things simpler, like using "1111" instead of typing a long password every time. Let's take a look at some real-world examples.
+
+How "123456" password exposed chats for 64 million McDonald's job applications
+How a misconfigured AWS cloud resulted in a breach of 106 million bank customers
+How improperly configured smart fridges are silently used in full-scale botnet attacks
+Another common scenario is when the IT department unknowingly introduces new flaws into secure systems. Below is a simple example of how a critical database can be breached because of the insecure configuration:
+
+A use case of a bad database setup: first, an IT admin sets a weak password, then exposes the database to the Internet, and after a few days, the database is breached by threat actors.
+
+Responding to Misconfigurations
+Misconfigurations do not require a software update - just a better setup. As a SOC analyst, you'll often spot them only after threat actors exploit them. However, in smaller companies, you might also be responsible for a more proactive response, for example:
+
+Penetration Testing: Hire ethical "hackers" who simulate an attack and report on discovered security flaws
+Vulnerability Scans: Periodically run tools that can detect default passwords or outdated software
+Configuration Audits: Manually review the systems to match best practices like CIS benchmarks
