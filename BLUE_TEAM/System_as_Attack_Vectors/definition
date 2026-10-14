@@ -1,0 +1,18 @@
+Imagine a castle again, but now with a trained gatekeeper who knows how to identify phishing and how to combat deepfakes. However, if the lock on the main
+  gate is fragile and cheap, guardian skills do not matter, as the enemy can just sneak into the castle while no one is watching. In cyber terms, threat
+  actors can attack insecure systems directly, without the users' knowledge.
+
+A cheap padlock penetrated by an arrow, demonstrating how threat actors attack systems.
+
+Definition of System
+Where do the banks store your cards, or where are your emails stored? The answer - on a system: a physical server, a lab machine, or a cloud platform like Microsoft
+  365. Protecting such systems is crucial: if the attackers breach one user's mailbox via phishing, they compromise a single mailbox, but if they breach a mail
+    server, they now control all thousands of mailboxes. Each system type can have a different value for threat actors, for example:
+
+Breached System	Attack Value
+A personal laptop of a school student	Steal Steam profile and add the PC to a botnet
+A laptop of the bank's senior IT administrator	Get access to the internal banking systems
+A mail server of a criminal law company	Dump all mailboxes and blackmail the victim 
+A server at the heart of an industrial network	Encrypt the whole network with ransomware
+A government website management panel	Damage the website content (defacement / activism)
+
