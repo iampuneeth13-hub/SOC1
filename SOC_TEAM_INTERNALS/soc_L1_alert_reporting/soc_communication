@@ -1,0 +1,19 @@
+The escalation and reporting topics should sound straightforward and logical to you. But, as always, it's easier said than done, and you should be prepared for
+unexpected scenarios and know what to do in critical cases. In the best scenario, the SOC team has its own Crisis Communication procedures - the guides and processes
+to help you and your teammates resolve the issues. If not, you are advised to read the cases below and be prepared to handle them effectively.
+
+Communication Cases
+You need to escalate an urgent, critical alert, but L2 is unavailable and does not respond for 30 minutes.
+Ensure you know where to find emergency contacts. First, try to call L2, then L3, and finally your manager.
+
+The alert about Slack/Teams account compromise requires you to validate the login with the affected user.
+Do not contact the user through the breached chat - use alternative contact methods like a phone call.
+
+You receive an overwhelming number of alerts during a short period of time, some of which are critical.
+Prioritise the alerts according to the workflow, but inform your L2 on shift about the situation.
+
+After a few days, you realise that you misclassified the alert and likely missed a malicious action.
+Immediately reach out to your L2 explaining your concerns. Threat actors can be silent for weeks before impact.
+
+You can not complete the alert triage since the SIEM logs are not parsed correctly or are not searchable.
+Do not skip the alert - investigate what you can and report the issue to your L2 on shift or SOC engineer.
