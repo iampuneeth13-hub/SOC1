@@ -1,0 +1,22 @@
+Continuing identity and asset inventory topics, you might also need to look at the alert from a network point of view, especially in bigger companies. Consider the 
+scenario where you are investigating a chain of related alerts based on firewall logs and want to give some meaning to the IPs you see:
+
+08:00: An IP 103.61.240.174 is repeatedly connecting to a corporate firewall via port TCP/10443
+08:23: Firewall logs show that the IP 103.61.240.174 was translated to an internal 10.10.0.53 IP
+08:25: The IP 10.10.0.53 is scanning the 172.16.15.0/24 network range but does not find open ports
+08:32: The same IP is now scanning the 172.16.23.0/24 network range, and the attack seems to be ongoing
+Network Diagrams
+To investigate the case above, you will have to find out what service is running at the 10443 port and why anyone would connect there. Then, identify the subnet the 
+10.10.0.53 IP belongs to and why it would ever try to connect to other subnets. A network diagram, a visual schema presenting existing locations, subnets, and their 
+connections, is an answer to your questions:
+
+Network diagram for the explained scenario: a firewall exposing VPN on port 10443, and web service on HTTP ports. The firewall protects three corporate subnets: 
+Office (172.16.23.0/24), Database (172.16.15.0/24), and VPN (10.10.0.0/16)
+
+Depending on a company's size and structure, you may see more complex diagrams, but their use for SOC analysts remains the same - to help understand suspicious 
+network activity. In our scenario, you can refer to the network diagram and reconstruct the attack path as follows:
+
+Threat actor behind the 103.61.240.174 IP performed VPN brute force, targeting vpn.tryhatme.thm
+After a successful brute force and VPN login, the threat actor was assigned an IP from the VPN Subnet
+Then, the adversary tried to scan the Database Subnet, but was likely blocked by the firewall rules
+Seeing no success, the threat actor switches to the Office Subnet, looking for their next target
