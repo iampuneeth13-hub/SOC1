@@ -1,0 +1,30 @@
+Next, remember that an alert by itself will not stop the breach, and it is important to timely receive the alert, triage it, and respond to the attack before the
+attackers achieve their goals. The requirements to ensure a quick detection and remediation of the threat are commonly grouped into a Service Level Agreement (SLA) 
+- a document signed between the internal SOC team and its company management, or by the managed SOC provider (MSSP) and its customers. The agreement usually requires
+quick threat detection (measured by MTTD), timely alert acknowledgement by L1 analysts (measured by MTTA), and finally, prompt response to the threat, like isolating 
+the device or securing the breached account (measured by MTTR):
+
+Metrics timeline showing a typical threat timeline, where first we measure MTTD, then MTTA, and finally MTTR
+
+Reference Table
+Note that different teams might have different definitions or formulas for the SOC metrics, depending on what they want to measure. For this and the following tasks, 
+please use the illustration above and the reference table below to answer the questions.
+
+Metric	Common SLA	Description
+SOC Team Availability	24/7	Working schedule of the SOC team, often Monday-Friday (8/5) or 24/7 mode
+Mean Time to Detect (MTTD)	5 minutes	Average time between the attack and its detection by SOC tools
+Mean Time to Acknowledge (MTTA)	10 minutes	Average time for L1 analysts to start triage of the new alert
+Mean Time to Respond (MTTR)	60 minutes	Average time taken by SOC to actually stop the breach from spreading
+
+Answer the questions below
+Imagine a scenario where the SOC team receives a critical alert on Saturday.
+If the team works 8/5, on which day of the week will they acknowledge the alert?
+Monday
+
+Imagine a scenario where an employee was lured into running data stealer malware.
+  1. The SOC team received the "Connection to Redline Stealer C2" alert after 12 minutes.
+  2. One of the L1 analysts on shift moved the alert to In Progress 10 minutes later.
+  3. After 6 minutes, the alert was escalated to L2, who spent 35 minutes cleaning the malware.
+Provide the MTTD, MTTA, and MTTR via comma as your answer (e.g. 10,20,30).
+12,10,51
+
