@@ -1,0 +1,74 @@
+The increase in the use of digital devices is undeniable. Most of the business's core functions rely on the use of these digital devices. Cyber threats, on the other
+  hand, are also increasing day by day. To protect these devices, organizations implement several security measures, most of which are to protect the network on which
+    they operate these digital devices. However, the fast adoption of Remote Work has exposed these devices as they are out of the perimeter protection deployed on the
+      organization's network. 
+
+To ensure these endpoint devices are protected even out of the network, we need a security solution that guards all devices in different areas and is capable of fighting
+      advanced threats. Endpoint Detection and Response (EDR) is a security solution that offers deep-level protection for endpoints. No matter where the endpoints are,
+      the EDR will make sure they are monitored constantly and threats are detected.
+
+Below are some of the EDR solutions in the market:
+
+CrowdStrike Falcon
+Symantec EDR
+SentinelOne EDR
+Microsoft Defender for Endpoint
+ 
+
+Several other EDR solutions are available in the market. Their underlying architecture is mostly similar, but the features may vary. Let's take a look at the core features
+      of an EDR. We will be using the screenshots from CrowdStrike Falcon EDR to demonstrate the core features of EDR.
+
+Features of EDR
+There are three main features of an EDR, which can also be referred to as the three pillars of an EDR solution.
+Pillars of EDR.
+
+Note: The screenshots used in this task were taken from CrowdStrike Falcon EDR when this room was created.
+
+Visibility 
+A good analysis often depends on the available level of visibility of the activity. This is one of the features of EDR that makes it unique from other endpoint security 
+      solutions. The level of visibility EDR provides is impressive. It collects detailed data from the endpoints, which includes process modifications, registry
+      modifications, file and folder modifications, user actions, and much more. It then presents this information in a very structured format to the analyst.
+        The analyst can see the whole process tree with a complete activity timeline of the sequence of actions. The analyst can also access the historical data
+        of any endpoint for threat hunting or any other purpose. Any detections in the EDR land with a whole context.
+
+Process Modifications	Registry Modifications	File And Folder Modifications	User Actions	And Much More
+The following screenshot shows graphical representation of a process tree. We can see which processes were spawned on the endpoint. Each node represents a process.
+        The lines connecting them represents their relationship. If we click on the + icon given with each process, we will be able to see all the network connections, 
+        registry changes, file changes etc. associated with that process. 
+
+CrowdStrike Falcon EDR's Process Tree.
+Along with the process trees, there are many other features available in the EDRs which maximize the visibility. 
+
+Detection 
+The detection feature of EDR wins over traditional detection capabilities. It incorporates signature-based detections as well as behavior-based detections, such as
+        unexpected user activities. With modern machine learning capabilities, it identifies any deviation from the baseline behavior and instantly flags it. It can 
+        also detect fileless malware that resides in memory. It also allows us to feed custom IOCs for threat detections.
+
+The following screenshot shows a dashboard of all the detections happening on the different endpoints. Each detection is represented by a row with different fields 
+        including the severity of the detection, time, triggering file, hostname, username, and more. The Tactic via Technique field maps the detection with MITRE. 
+        Any detection when clicked will show us rich details which helps a SOC analyst during the analysis.
+
+CrowdStrike Flacon EDR's detections page.
+
+Response 
+EDR also empowers analysts to take action on detected threats. These actions can be taken at any endpoint within the central EDR console. Imagine getting a detection on
+        the EDR with full-fledged details on when, where, and what happened, and you have to opt for the best possible action for that detection. As an analyst, you may 
+        decide to isolate a complete endpoint, terminate a process, or quarantine some files. You can also connect to the host remotely and execute actions independently. 
+          You can do this all from within the EDR console.
+
+The following screenshot shows the actions available that can be taken on the host after connecting to it. 
+
+CrowdStrike Falcon EDR's RTR (Real Time Response) console.
+
+There are several other actions that the analyst can take during the investigation.
+
+Note: In Task #6, we will be covering the Detection and Response capabilities of an EDR in more detail.
+
+With advanced visibility, detection, and response, EDR becomes a very powerful tool. However, it's also important to remember that an EDR is a host-only security solution 
+  and does not detect network-level threats.
+
+Answer the questions below
+Which feature of EDR provides a complete context for all the detections?
+
+Visibility
+
