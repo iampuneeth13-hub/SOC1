@@ -1,0 +1,37 @@
+In the previous tasks, we saw how powerful an EDR is for an endpoint. However, do you know:
+
+How does an EDR manage to provide this much visibility of the endpoints?
+How can it detect advanced threats?
+How can a few clicks eradicate the threat from an endpoint?
+This seems like magic. Let's try to understand it in a very simple way.
+
+EDR Agents connected with EDR Console.
+
+
+Agents
+We can integrate multiple endpoints with our EDR and manage them through a centralized console. There are EDR agents that we have to deploy inside those endpoints.
+These agents are also sometimes referred to as sensors. They are the eyes and ears of the EDR. Their job is to sit at the endpoint and monitor all the activities.
+The information about these activities is sent in detail to the EDR central console in real time. The EDR agents can do some basic signature-based and behavior-based 
+detections by themselves and send them to the EDR console, which triggers alerts.
+
+EDR Console
+All the detailed data sent by the EDR agents is correlated and analyzed through complex logic and machine learning algorithms. The threat intelligence information is 
+matched with the collected data. The EDR is just like the brain connecting all the dots. These dots connect to form a detection, often called an alert. 
+
+The following screenshot shows the dashboard of an EDR console. All the data from the endpoint agents is coming into this console, and the detections are happening 
+here. This dashboard gives a holistic view of the current status of detections in all the endpoints. 
+
+CrowdStrike Falcon EDR Console.
+
+What happens after Detection?
+When a detection comes, it's a SOC analyst's responsibility to acknowledge the alert and prioritize it. The prioritization is made easy by the EDR itself. It gives
+severities to all the alerts (Critical, High, Medium, Low, Informational). The alert with the highest severity is investigated as a priority. For the investigation, 
+once the alert is clicked, the analyst can see all the details of the detection. This includes any files executed, processes executed, network connection attempts,
+registry modifications, and much more. Based on the available data, the analyst's job is first to use their expertise to determine if the alert is a false positive 
+or a true positive. In case of a true positive, the analyst can take actions from within the EDR console. 
+
+EDR with Other Tools
+As a SOC Analyst, it is essential to understand that although a standalone EDR provides enough information to detect and respond to threats in an endpoint, it works 
+alongside other security solutions to form a larger security ecosystem. Within a network, you will see Firewalls, DLPs, Email Security Gateways, IAMs, EDRs, and other
+security solutions protecting the different components of the network. To minimize the effort and maximize the efficiency, all these security solutions are integrated 
+with a SIEM solution that becomes the central point of investigation for the analysts. We will also discuss the SIEM solution in detail in the upcoming rooms of this module.
