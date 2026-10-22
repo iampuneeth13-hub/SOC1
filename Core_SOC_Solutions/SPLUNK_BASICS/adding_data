@@ -1,0 +1,78 @@
+Splunk can ingest any data. According to the Splunk documentation, when data is added to Splunk, the data is processed and transformed into a series of individual events. The data sources can be event logs, website logs, firewall logs, etc. The data sources are grouped into categories.
+
+ Below is a chart listing from the Splunk documentation detailing each data source category.
+
+Data sources supported by Splunk
+
+In this task, we're going to focus on VPN logs. We're presented with the following screen when we click on the Add Data link on the Splunk home screen.
+
+Data sources Option
+
+We will use the Upload Option to upload the data from our local machine.
+
+Practical
+Download the log file VPN_logs from the Download Task Files button below and upload it to the Splunk instance we started in Task #2. If you are using the AttackBox, the log file is available in the /root/Rooms/SplunkBasic/ directory.
+
+
+Download Task Files
+To upload the data successfully, you must follow five steps, which are explained below:
+
+Select Source: Choose the Log file and the data source.
+Select Source Type: Select what type of logs are being ingested, e.g, JSON, syslog.
+Input Settings: Select the index where these logs will be dumped and the HOSTNAME to be associated with the logs.
+Review: Review all the configurations.
+Done: Complete the upload. Your data will be uploaded successfully and ready to be analyzed.
+Data Ingestion Example
+
+Import settings
+The downloaded VPN_logs file is newline-delimited JSON. Use the Splunk upload wizard so Splunk treats each line as one event.
+
+Open Add Data and choose Upload.
+Select the downloaded VPN_logs file.
+Keep the JSON source type detected by Splunk.
+On Input Settings, create or select the index VPN_Logs.
+After the upload completes, open Search & Reporting and set the time picker to All time.
+If the field names do not appear in search results, add | spath after the base search. That tells Splunk to parse the JSON fields from each event.
+
+Useful checks
+Use these searches to check your import before answering the questions:
+
+
+index=VPN_Logs
+| stats count
+
+index=VPN_Logs
+| spath
+| search UserName="Maleena"
+| stats count
+
+index=VPN_Logs
+| spath
+| search Source_ip="107.14.182.38"
+| stats values(UserName) as UserName count
+
+index=VPN_Logs
+| spath
+| search Source_Country!="France"
+| stats count
+
+index=VPN_Logs
+| spath
+| search Source_ip="107.3.206.58"
+| stats count
+
+Answer the questions below
+Upload the data attached to this task and create an index "VPN_Logs". How many events are present in the log file?
+2862
+
+How many log events are captured by the user Maleena?
+60
+
+What is the username associated with IP 107.14.182.38?
+Smith
+
+What is the number of events that originated from all countries except France?
+2814
+
+How many VPN events were associated with the IP 107.3.206.58?
+14
