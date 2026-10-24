@@ -37,3 +37,6 @@ Logstash collects data from beats, ports, or files, parses/normalizes it into fi
 Elasticsearch acts as a database used to search and analyze data.
 Kibana is responsible for displaying and visualizing the data stored in Elasticsearch. The data stored in Elasticsearch can easily be shaped into different visualizations, time charts, infographics, etc., using Kibana.
 ELK components
+
+NOTE:
+API, which stands for Application Programming Interface, is a set of rules and protocols for building software and applications. An API allows different software programs to communicate with each other. It defines methods of communication between various components, including the kinds of requests that can be made, how they're made, the data formats that should be used, and conventions to follow.
