@@ -1,0 +1,74 @@
+From this task onwards, we will discuss ELK's front-end interface. These are the main features that a SOC analyst operates on. As discussed in the second task of this room, Kibana is the component of ELK that supports these interactions with the front end.
+
+Discover Tab
+The Discover tab is where the SOC analysts spend most of their time. This tab shows the ingested logs, the search bar, normalized fields, and more. Analysts can search for the logs, investigate anomalies, and apply filters based on search terms and time periods.
+
+Shows the Discover tab with key functionalities numbered
+
+Let's briefly see what each element (as highlighted in the above screenshot) of the Discover tab does: 
+
+Logs
+Each row shows a single log containing information about the event, along with the fields and values found in that log.
+Fields Pane
+The left panel of the interface shows the list of fields parsed from the logs. We can click on any field to add it to the filter or remove it from the search.
+Index Pattern
+Each type of log is stored in a different index pattern. We can select the index pattern from which we need the logs. For example, for VPN logs, we would need to select the index pattern in which VPN logs are stored.
+Search Bar
+It is a place where the user adds search queries and applies filters to narrow down the results. In the next task, we will learn how to perform searches through queries.
+Time Filter
+We can narrow down results based on any specific time duration. 
+Time Interval
+This chart shows the event counts over time.
+TOP Bar
+This bar contains various options to save the search, open the saved searches, share or save the search, etc.
+Discover Tab
+This is the main workspace in Kibana for exploring, searching, and analyzing raw data.
+Add Filter
+We can apply filters to specific fields to narrow down results, rather than manually typing entire queries.
+Some of the important elements found in the Discover tab are briefly explained below:
+
+Index Pattern
+
+By default, Kibana requires an index pattern to access the data stored/ingested in Elasticsearch. The index pattern tells Kibana which elasticsearch data we want to explore. Each Index pattern corresponds to certain defined properties of the fields. A single index pattern can point to multiple indices.
+
+Each log source has a different log structure; therefore, when logs are ingested into Elasticsearch, they are first normalized into corresponding fields and values by creating a dedicated index pattern for the data source.
+
+In the attached lab, we will explore the index pattern vpn_connections which contains the VPN logs.
+
+Shows the Index Pattern tab
+
+Fields Pane
+
+The left panel in the Discover tab shows the list of the normalized fields it finds in the available logs. Click on any field, and it will show the top 5 values and the percentage of occurrence.
+
+We can use these values to apply filters to them. Clicking on the + button will add a filter to show the logs containing this value, and the - button will add a filter to show the results that do not have this value.
+
+Shows left panel fields
+
+We can also apply filters to any of the fields shown in the panel on the left. All we have to do is click the Add filter option under the search bar, which will allow us to apply a filter to the fields shown below.
+
+Shows steps to add a filter to the search
+
+Time Filter
+
+The time filter allows us to apply a log filter based on time. It has many options.
+
+Shows the time filter tab
+
+Timeline
+
+The timeline pane provides an overview of the number of events that occurred for the time/date, as shown below. We can only select the bar to show the logs in that period. The count at the top left displays the number of events found in the specified time.
+
+Shows timeline
+
+This bar is also helpful in identifying the spike in the logs. In the above screenshot, we can see an unusual log spike on 11th January 2022.
+
+Create Table
+
+By default, the logs are shown in raw form. We can click on any log and select important fields to create a table showing only those fields. This method reduces the noise and makes it more presentable and meaningful.
+
+Shows steps to create a table by selecting fields and removing noise
+
+You can also save the table format once it is created. It will then show the same fields every time a user logs into the dashboard.
+
+Time range check: Before answering the data questions, set the Kibana time picker to include January 2022. A wide range such as Last 15 years also works for this lab.
