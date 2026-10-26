@@ -1,0 +1,31 @@
+The visualization tab allows us to visualize the data in different forms such as tables, pie charts, bar charts, etc. This visualization task will use the multiple options this tab provides to create some simple presentable visualizations.
+
+Create Visualization
+There are a few ways to navigate to the visualization tab. One way is to click on any field in the discover tab and click on the visualization as shown below.
+
+Shows the Visualization tab overview
+
+We can create multiple visualizations by selecting options like tables, pie charts, etc.
+
+Correlation Option
+Often, we require creating correlations between multiple fields. Dragging the required field in the middle will create a correlation tab in the visualization tab. Here, we selected the Source_Country as the second field to show a correlation among the client Source_IP.
+
+Pie-chart for TOP 5 Source_Country
+
+We can also create a table to show the values of the selected fields as columns, as shown below.
+
+Table with IPs VS country Count
+
+The most important step in creating these visualizations is saving them. To do so, click on the save Option on the right side and fill in the descriptive values below. 
+
+Button to save Visualization
+
+Steps to take after creating Visualizations:
+
+Create a visualization and click the Save button at the top right corner.
+Add the title and description to the visualization.
+Click Save and add to the library when it's done.
+Failed Connection Attempts Visualization
+Failed attempts filter: For the failed connection visualisation, use the vpn_connections data view, set the time picker to include January 2022, then filter for action: failed. Do not exclude failed events; the table should only show failed VPN connection attempts. Use UserName and Source_ip as the table fields.
+
+We'll use the knowledge gained above to create a table to show the user and the IP address involved in failed attempts.
