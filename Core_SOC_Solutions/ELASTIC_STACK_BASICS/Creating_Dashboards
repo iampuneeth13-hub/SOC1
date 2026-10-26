@@ -1,0 +1,13 @@
+Dashboards provide good visibility into log collection. A user can create multiple dashboards to fulfill a specific need. In this task, we can combine different saved searches and visualizations to create a custom dashboard for VPN log visibility.
+
+Creating a Custom Dashboard
+
+By now, we have saved a few Searches from the Discover tab, created some Visualizations, and saved them. It's time to explore the dashboard tab and create a custom dashboard. The steps to create a dashboard are:
+
+Go to the Dashboard tab and click on the Create dashboard.
+Image with a button to create a Dashboard
+
+Click on Add from Library.
+Click on the visualizations and saved searches. It will be added to the dashboard.
+Once the items are added, adjust them accordingly, as shown below.
+Don't forget to save the dashboard after completing it.
