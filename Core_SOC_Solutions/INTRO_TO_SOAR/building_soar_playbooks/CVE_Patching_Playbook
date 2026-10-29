@@ -1,0 +1,17 @@
+A CVE (Common Vulnerabilities and Exposures) is a vulnerability that is disclosed publicly and assigned a CVE number. As part of 
+vulnerability management, the SOC team has to address newly released CVEs by verifying whether they exist in their network and
+patching them if they do.  An analyst must always be on the lookout for publications on new CVEs and remediation plans. The process
+can become overwhelming, resulting in a mounting backlog and patches not being applied, leaving the environment more vulnerable.
+Moreover, this process can take a lot of time and resources of the SOC team since CVEs are released frequently. So, to solve this 
+problem, we can make a playbook for handling the CVEs inside the SOAR tool, just like we did for the phishing case.
+
+This playbook will analyse the CVE details, assess its risk threshold, create a patching ticket, and test the patch before being 
+pushed to the production environment. The following is an example of a playbook made for CVE patching.
+
+Note: Please click to enlarge the image.
+
+ Flowchart showing the process of automating a CVE patching workflow using a SOAR solution.
+
+As you can see in both the playbooks' flow diagrams, most of the steps are automated, but a SOC analyst can be seen at a few points.
+This highlights that while SOAR reduces repetitive manual process burden, SOC analysts' roles remain essential for crucial decisions
+and verifications.
