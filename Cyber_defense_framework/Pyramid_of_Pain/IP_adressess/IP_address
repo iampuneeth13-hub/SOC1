@@ -19,3 +19,11 @@ According to Akamai, Fast Flux is a DNS technique used by botnets to hide phishi
 So, the primary concept of a Fast Flux network is having multiple IP addresses associated with a domain name, which is constantly changing. Palo Alto created a great fictional scenario to explain Fast Flux: "Fast Flux 101: How Cybercriminals Improve the Resilience of Their Infrastructure to Evade Detection and Law Enforcement Takedowns"
 
 Read the following report (generated from any.run) for this sample here to answer the questions below:
+
+Read the following report to answer this question. What is the first IP address the malicious process (PID 1632) attempts to communicate with? 
+50.87.136.52
+
+
+Read the following report to answer this question. What is the first domain name the malicious process ((PID 1632) attempts to communicate with?
+craftingalegacy.com
+
